@@ -1,35 +1,38 @@
 <img src="https://camo.githubusercontent.com/c54fb7a1dd4e25fdef1ac57a12ea8ed569a005fe5892815c14be660691b36f4b/687474703a2f2f696d6775722e636f6d2f743374654178692e706e67">
 <h1>Deploy</h1>
----------------
+
 <h2>Features</h2>
------------------
+
 <h3>Products Features</h3>
---------------------------
-|Feature|Coded?|Description|
-----------------------------
-|Add a Product|     | Ability of Add a Product on the System|
-|List Products|     | Ability of List Products |
-|Edit a Product|     |Ability of Edit a Product|
-|Delete a Product|    | Ability of Delete a Product|
-|Stock         |      | Ability of Update the Stock|
-|Stock History  |     | Ability to see the Stock History|
+
+| Feature          | Coded? | Description                            |
+|------------------|--------|----------------------------------------|
+| Add a Product    |        | Ability of Add a Product on the System |
+| List Products    |        | Ability of List Products               |
+| Edit a Product   |        | Ability of Edit a Product              |
+| Delete a Product |        | Ability of Delete a Product            |
+| Stock            |        | Ability of Update the Stock            |
+| Stock History    |        | Ability to see the Stock History       |
 
 <h3>Purchase Features</h3>
-|Feature | Coded? | Description |
-|Create a Cart |     |Ability of Create a new Cart|
-|See Cart  |      | Ability to see the Cart and it items |
-|Remove a Cart |     | Ability of Remove a Cart |
-|Add Item  |      | Ability of add a new Item on the Cart |
-|Remove an Item |     | Ability of Remove an Item from the Cart |
-|Checkout |      | Ability to Checkout |
+
+| Feature        | Coded?  | Description                             |
+|----------------|---------|-----------------------------------------|
+| Create a Cart  |         | Ability of Create a new Cart            |
+| See Cart       |         | Ability to see the Cart and it items    |
+| Remove a Cart  |         | Ability of Remove a Cart                |
+| Add Item       |         | Ability of add a new Item on the Cart   |
+| Remove an Item |         | Ability of Remove an Item from the Cart |
+| Checkout       |         | Ability to Checkout                     |
 
 <h1>eCommerce</h1>
-------------------------------------------------------------------------
+
 eCommerce it's an open source (test scenario) software made to create a easy and simple "Shop" API, where you have two micro services, one the Products API that stores and handles everything Related to Stock and Products. And the Purchase API where you can create orders (cart's) and checkout items.
 
 The purpose of this repository it's for education and test. But the code it's being coded in a proper way.
 
 <h2>Documentation</h2>
+
 eCommerce has a full API documentation made with Swagger, you can check it by accessing this link.
 
 If you have any Issue or bug you can submit a new Issue by accessing this link.
@@ -103,54 +106,4 @@ You can easily run the Test Cases using the standalone Grails package built-in w
 grailsw test-app
 
 <h1>Credits</h1>
-This development/educational scenario was coded and created by Claudio Santoro unde the <a href="https://github.com/ovflowd/ecommerce/blob/master/LICENSE">GNU GPL v3</a> License. The objective of this repository it's as practical test of RESTful API's with Java + Groovy.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This development/educational scenario was coded and created by Stephen Brown under the <a href="https://github.com/ovflowd/ecommerce/blob/master/LICENSE">GNU GPL v3</a> License. The objective of this repository it's as practical test of RESTful API's with Java + Groovy.
