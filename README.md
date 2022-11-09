@@ -7,29 +7,29 @@
 
 | Feature          | Coded? | Description                            |
 |------------------|--------|----------------------------------------|
-| Add a Product    |        | Ability of Add a Product on the System |
-| List Products    |        | Ability of List Products               |
-| Edit a Product   |        | Ability of Edit a Product              |
-| Delete a Product |        | Ability of Delete a Product            |
-| Stock            |        | Ability of Update the Stock            |
+| Add a Product    |        | Ability to Add a Product on the System |
+| List Products    |        | Ability to List Products               |
+| Edit a Product   |        | Ability to Edit a Product              |
+| Delete a Product |        | Ability to Delete a Product            |
+| Stock            |        | Ability to Update the Stock            |
 | Stock History    |        | Ability to see the Stock History       |
 
 <h3>Purchase Features</h3>
 
 | Feature        | Coded?  | Description                             |
 |----------------|---------|-----------------------------------------|
-| Create a Cart  |         | Ability of Create a new Cart            |
+| Create a Cart  |         | Ability to Create a new Cart            |
 | See Cart       |         | Ability to see the Cart and it items    |
-| Remove a Cart  |         | Ability of Remove a Cart                |
-| Add Item       |         | Ability of add a new Item on the Cart   |
-| Remove an Item |         | Ability of Remove an Item from the Cart |
+| Remove a Cart  |         | Ability to Remove a Cart                |
+| Add Item       |         | Ability to add a new Item on the Cart   |
+| Remove an Item |         | Ability to Remove an Item from the Cart |
 | Checkout       |         | Ability to Checkout                     |
 
 <h1>eCommerce</h1>
 
-eCommerce it's an open source (test scenario) software made to create a easy and simple "Shop" API, where you have two micro services, one the Products API that stores and handles everything Related to Stock and Products. And the Purchase API where you can create orders (cart's) and checkout items.
+eCommerce is an open source (test scenario) software made to create an easy and simple "Shop" API, where you have two micro services, one the Products API that stores and handles everything Related to Stock and Products. And the Purchase API where you can create orders (cart's) and checkout items.
 
-The purpose of this repository it's for education and test. But the code it's being coded in a proper way.
+The purpose of this repository is for education and test. But the code is being coded in a proper way.
 
 <h2>Documentation</h2>
 
@@ -41,7 +41,7 @@ If you want to Contribute you can submit a Pull Request, remember to READ the Co
 
 <h2>Installation</h2>
 
-eCommerce it's splitted into two standalone RESTful API's, so you can run it on whatever port you want. Installing
+eCommerce is splitted into two standalone RESTful API's, so you can run it on whatever port you want. Installing
 eCommerce it's easy, the tutorial above will explain to you.
 eCommerce uses Groovy 2.4 and Grails 3.2.11.
 
@@ -82,7 +82,7 @@ Production Environments are focused in being ready. That means, you just need ex
 
 In the Production Environment all eCommerce API's are configured to work with <strong>MySQL</strong> in two databases; <strong>productsAPI</strong> and <strong>purchaseAPI</strong> and to work with a default <strong>username</strong> and <strong>password</strong> combination:
 
-<h3>Note</h3>.: Remember importing each SQL files, if using MySQL for Production. You can find them inside products-api/src/main/sql/ and purchase-api/src/main/sql/
+<h3>Note</h3>.: Remember importing each SQL files using MySQL for Production. You can find them inside products-api/src/main/sql/ and purchase-api/src/main/sql/
 
 - <strong>Username</strong>: commerce
 - <strong>Password</strong>: commerceapi
@@ -106,4 +106,4 @@ You can easily run the Test Cases using the standalone Grails package built-in w
 grailsw test-app
 
 <h1>Credits</h1>
-This development/educational scenario was coded and created by Stephen Brown under the <a href="https://github.com/ovflowd/ecommerce/blob/master/LICENSE">GNU GPL v3</a> License. The objective of this repository it's as practical test of RESTful API's with Java + Groovy.
+This development/educational scenario was coded and created by Stephen Brown under the <a href="https://github.com/ovflowd/ecommerce/blob/master/LICENSE">GNU GPL v3</a> License. The objective of this repository is for practical test of RESTful API's with Java + Groovy.
