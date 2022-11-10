@@ -47,7 +47,7 @@ eCommerce uses Groovy 2.4 and Grails 3.2.11.
 
 You can run eCommerce in different ways. You can go to the Releases Page and download the source code of the latest release, or a bundled .war or a standalone java application (.jar).
 
-We recommend ypu ee the notes on this section.
+We recommend you see the presentation on this section.
 
 <h3>Development</h3>
 
@@ -56,34 +56,56 @@ You can attach the .war in WebServers like <strong>Nginx</strong> using the Mana
 If you want run the standalone .jar just download it, and open your CMD/Terminal and write:
 
 <h3>If you want RUN the Products API</h3>
-
-java -jar ecommerce-products-api-XXX.jar <strong>OR</strong> ./products-api/grailsw run-app
-
+```bash
+java -jar ecommerce-products-api-XXX.jar 
+```
+<strong>OR</strong> 
+```bash
+./products-api/grailsw run-app
+```
 <h3>If you want RUN the Purchases API</h3>
-
-java -jar ecommerce-purchase-api-XXX.jar <strong>OR</strong>./purchase-api/grailsw run-app
-
-You also can build from the sources by running the Grails Console, just went to one of the API's folder purchase-api or products-api and write on your CMD/Terminal the following:
-
+```bash
+java -jar ecommerce-purchase-api-XXX.jar 
+```
+<strong>OR</strong> 
+```bash
+./purchase-api/grailsw run-app
+```
+You also can build from the sources by running the Grails Console, go to one of the API's folder 
+```bash
+purchase-api 
+```
+or 
+```bash
+products-api
+```
+ and write on your CMD/Terminal the following:
+```bash
 grailsw assemble
-
-If you want to run it in development scenario, you can also do it by building the sources. You have two manner to do it. You can Gradle or directly Grails. Both products-api and purchase-api comes with Groovy, Grails and Gradle standalone packages. So you can run it without the need of installing they.
+```
+If you want to run it in development scenario, you can also do it by building the sources. You have two manner to do it. You can Gradle or directly Grails. Both products-api and purchase-api comes with Groovy, Grails and Gradle standalone packages. So you can run it without installing them.
 
 <h3>Option #1 - Run by Gradle</h3>
-
+```bash
 gradlew bootRun
-
+```
 <h3>Option #2 - Run by Grailsw</h3>
-
+```bash 
 grailsw run-app
-
+```
 <h2>Production</h2>
 Production Environments are focused in being ready. That means, you just need execute the Jar File.
 
 In the Production Environment all eCommerce API's are configured to work with <strong>MySQL</strong> in two databases; <strong>productsAPI</strong> and <strong>purchaseAPI</strong> and to work with a default <strong>username</strong> and <strong>password</strong> combination:
 
-<h3>Note</h3>.: Remember importing each SQL files using MySQL for Production. You can find them inside products-api/src/main/sql/ and purchase-api/src/main/sql/
-
+<h3>Note</h3>.: Remember importing each SQL files using MySQL for Production. You can find them inside 
+```bash 
+products-api/src/main/sql/
+```
+and
+```bash
+purchase-api/src/main/sql/
+```
 - <strong>Username</strong>: commerce
 - <strong>Password</strong>: commerceapi
 - <strong>Database</strong>: productsapi & purchaseapi
@@ -98,12 +120,15 @@ You can change those credentials in the application.yaml file. In production env
 
 <h3>Note</h3>.: You can change your database credentials both for development/test and production scenarios in the app-config.yml available on each API sources root. Those configuration files can be used also externally, after building the .jar
 
-<h3>Note</h3>.: You also can clean the sources and rebuild the sources by running grailsw clean
+<h3>Note</h3>.: You also can clean the sources and rebuild the sources by running 
+```bash 
+grailsw clean
+```
 
 <h1>Running Test Cases</h1>
-You can easily run the Test Cases using the standalone Grails package built-in with both the API's. Just went to the home folder of one of them (products-api or purchase-api). And write on your CMD/Terminal:
-
+You can easily run the Test Cases using the standalone Grails package built-in with both the API's. Go to the home folder of one of them (products-api or purchase-api). And write on your CMD/Terminal:
+```bash
 grailsw test-app
-
+```
 <h1>Credits</h1>
 This development/educational scenario was coded and created by Stephen Brown under the <a href="https://github.com/ovflowd/ecommerce/blob/master/LICENSE">GNU GPL v3</a> License. The objective of this repository is for practical test of RESTful API's with Java + Groovy.
