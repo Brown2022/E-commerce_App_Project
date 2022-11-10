@@ -56,40 +56,50 @@ You can attach the .war in WebServers like <strong>Nginx</strong> using the Mana
 If you want run the standalone .jar just download it, and open your CMD/Terminal and write:
 
 <h3>If you want RUN the Products API</h3>
+
 ```bash
 java -jar ecommerce-products-api-XXX.jar 
 ```
 <strong>OR</strong> 
+
 ```bash
 ./products-api/grailsw run-app
 ```
 <h3>If you want RUN the Purchases API</h3>
+
 ```bash
 java -jar ecommerce-purchase-api-XXX.jar 
 ```
 <strong>OR</strong> 
+
 ```bash
 ./purchase-api/grailsw run-app
 ```
 You also can build from the sources by running the Grails Console, go to one of the API's folder 
+
 ```bash
 purchase-api 
 ```
 or 
+
 ```bash
 products-api
 ```
  and write on your CMD/Terminal the following:
+
 ```bash
 grailsw assemble
 ```
 If you want to run it in development scenario, you can also do it by building the sources. You have two manner to do it. You can Gradle or directly Grails. Both products-api and purchase-api comes with Groovy, Grails and Gradle standalone packages. So you can run it without installing them.
 
+
 <h3>Option #1 - Run by Gradle</h3>
+
 ```bash
 gradlew bootRun
 ```
 <h3>Option #2 - Run by Grailsw</h3>
+
 ```bash 
 grailsw run-app
 ```
@@ -99,6 +109,7 @@ Production Environments are focused in being ready. That means, you just need ex
 In the Production Environment all eCommerce API's are configured to work with <strong>MySQL</strong> in two databases; <strong>productsAPI</strong> and <strong>purchaseAPI</strong> and to work with a default <strong>username</strong> and <strong>password</strong> combination:
 
 <h3>Note</h3>.: Remember importing each SQL files using MySQL for Production. You can find them inside 
+
 ```bash 
 products-api/src/main/sql/
 ```
@@ -123,12 +134,14 @@ You can change those credentials in the application.yaml file. In production env
 <h3>Note</h3>.: You can change your database credentials both for development/test and production scenarios in the app-config.yml available on each API sources root. Those configuration files can be used also externally, after building the .jar
 
 <h3>Note</h3>.: You also can clean the sources and rebuild the sources by running 
+
 ```bash 
 grailsw clean
 ```
 
 <h1>Running Test Cases</h1>
 You can easily run the Test Cases using the standalone Grails package built-in with both the API's. Go to the home folder of one of them (products-api or purchase-api). And write on your CMD/Terminal:
+
 ```bash
 grailsw test-app
 ```
