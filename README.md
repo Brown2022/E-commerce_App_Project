@@ -103,9 +103,11 @@ In the Production Environment all eCommerce API's are configured to work with <s
 products-api/src/main/sql/
 ```
 and
+
 ```bash
 purchase-api/src/main/sql/
 ```
+
 - <strong>Username</strong>: commerce
 - <strong>Password</strong>: commerceapi
 - <strong>Database</strong>: productsapi & purchaseapi
@@ -130,5 +132,6 @@ You can easily run the Test Cases using the standalone Grails package built-in w
 ```bash
 grailsw test-app
 ```
+
 <h1>Credits</h1>
 This development/educational scenario was coded and created by Stephen Brown under the <a href="https://github.com/ovflowd/ecommerce/blob/master/LICENSE">GNU GPL v3</a> License. The objective of this repository is for practical test of RESTful API's with Java + Groovy.
